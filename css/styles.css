@@ -24,12 +24,12 @@ body {
   overflow-y: scroll; }
 
 .title {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 200;
   letter-spacing: 1rem;
   margin: 7rem auto;
   width: 40%;
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid white;
   text-transform: to uppercase; }
 
 .navigation {
@@ -131,7 +131,7 @@ body {
     height: 10rem;
     margin: auto; }
     .skills__row:not(:last-child) {
-      margin-bottom: 10rem; }
+      margin-bottom: 3rem; }
   .skills__card {
     width: 30%; }
     .skills__card:not(:last-child) {
@@ -142,78 +142,81 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     transition: all 0.2s; }
     .skills__image:hover {
       transform: scale(1.05) translateY(-5px) rotate(7deg);
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
   .skills__logo {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     padding: 1rem;
     display: flex;
     position: relative; }
     .skills__logo-1 {
-      left: -0.5rem;
-      top: -1rem;
-      position: absolute; }
+      left: -1rem;
+      top: -1.5rem;
+      position: absolute;
+      transform: scale(0.95); }
     .skills__logo-2 {
-      transform: scale(1.5);
-      left: 0.2rem;
-      top: -0.5rem;
+      transform: scale(1.2);
+      top: -1rem;
+      left: -0.6rem;
       position: absolute; }
     .skills__logo-3 {
-      top: -0.5rem;
-      left: -0.5rem;
+      top: -1rem;
+      left: -1rem;
       position: absolute;
-      transform: scale(1.5); }
+      transform: scale(1.2); }
     .skills__logo-4 {
-      top: -2rem;
-      left: -1.3rem;
+      top: -2.5rem;
+      left: -1.75rem;
       position: absolute;
       transform: scale(1.2);
       background-color: #f7df1e; }
     .skills__logo-5 {
-      top: -0.5rem;
-      left: -0.5rem;
+      top: -0.8rem;
+      left: -1rem;
       position: absolute;
-      transform: scale(1.2);
       background-color: #e34e26; }
     .skills__logo-6 {
       top: -1.5rem;
-      left: -0.5rem;
+      left: -1rem;
       position: absolute;
-      transform: scale(1.5);
+      transform: scale(1.3);
       background-color: #2062af; }
     .skills__logo-7 {
-      top: -0.5rem;
-      left: -0.5rem;
-      position: absolute; }
+      top: -1rem;
+      left: -1rem;
+      position: absolute;
+      transform: scale(0.9); }
     .skills__logo-8 {
-      top: -0.5rem;
-      left: -0.5rem;
-      position: absolute; }
+      top: -0.7rem;
+      left: -1rem;
+      position: absolute;
+      transform: scale(0.9); }
     .skills__logo-9 {
-      top: 0rem;
-      left: -0.5rem;
+      top: -0.5rem;
+      left: -1rem;
+      position: absolute;
+      transform: scale(0.8); }
+    .skills__logo-10 {
+      top: -2.5rem;
+      left: -1rem;
+      position: absolute;
+      transform: scale(1.4); }
+    .skills__logo-11 {
+      top: -1rem;
+      left: -1rem;
       position: absolute;
       transform: scale(0.95); }
-    .skills__logo-10 {
-      top: -2rem;
-      left: -0.5rem;
-      position: absolute;
-      transform: scale(1.5); }
-    .skills__logo-11 {
-      top: -0.5rem;
-      left: -0.5rem;
-      position: absolute; }
     .skills__logo-12 {
       color: var(--color-grey-1);
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-weight: 500;
-      top: 0.5rem;
-      left: -0.4rem;
+      top: 0.2rem;
+      left: -0.5rem;
       position: absolute; }
 
 .projects {
@@ -223,8 +226,8 @@ body {
     justify-content: center; }
   .projects__project {
     color: var(--color-grey-1);
-    width: 25rem;
-    height: 50rem;
+    width: 20rem;
+    height: 35rem;
     background-color: white;
     margin-right: 5rem;
     overflow: hidden;
@@ -247,7 +250,7 @@ body {
       background-image: url("../img/pokemon-app.jpg"); }
   .projects__details {
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--color-grey-2);
     text-align: start;
     font-weight: 300; }
