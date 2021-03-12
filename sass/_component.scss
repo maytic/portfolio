@@ -166,6 +166,11 @@
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
+
+    @media only screen and(max-width: 1470px) {
+      flex-direction: column;
+      margin: 5rem 5rem;
+    }
   }
 
   // card inside row

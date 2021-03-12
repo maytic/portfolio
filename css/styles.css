@@ -143,6 +143,10 @@ body {
     margin: auto; }
     .skills__row:not(:last-child) {
       margin-bottom: 3rem; }
+    @media only screen and (max-width: 1470px) {
+      .skills__row {
+        flex-direction: column;
+        margin: 5rem 5rem; } }
   .skills__card {
     width: 30%; }
     .skills__card:not(:last-child) {
