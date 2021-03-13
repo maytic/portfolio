@@ -396,13 +396,18 @@
 
 .projects {
   padding: 5rem;
-  @media only screen and(max-width: 1470px) {
-    padding: 0;
+
+  @media only screen and(max-width: 550px) {
+    padding: 3rem;
   }
+  @media only screen and(max-width: 450px) {
+    padding: 0.5rem;
+  }
+
   &__row {
     display: flex;
     justify-content: center;
-    @media only screen and(max-width: 1290px) {
+    @media only screen and(max-width: 1200px) {
       flex-direction: column;
     }
   }
@@ -411,19 +416,42 @@
     filter: brightness(0.9);
     transform: scale(0.98);
   }
+
   &__project {
     color: var(--color-grey-1);
-    width: 20rem;
+    width: 33.3333%;
     height: 35rem;
     background-color: rgba(255, 255, 255, 0.8);
     margin-right: 5rem;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+
+    // queries
+    @media only screen and(max-width: 1200px) {
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      width: 50%;
+    }
+
+    @media only screen and(max-width: 800px) {
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      width: 100%;
+    }
+
+    @media only screen and(max-width: 450px) {
+      margin: 0;
+    }
 
     transition: all 0.3s;
     &:first-child {
       margin-left: 5rem;
+
+      @media only screen and(max-width: 1200px) {
+        margin-left: auto;
+      }
     }
 
     &:hover {
@@ -440,7 +468,6 @@
 
     &-1 {
       background-image: url("../img/portfolio.JPG");
-      margin-left: -45%;
     }
     &-2 {
       background-image: url("../img/pokemon-app.jpg");
@@ -470,10 +497,17 @@
 // CONTACT ME SECTION
 ///////////////////////
 .contact-me {
+  padding: 10rem;
+  @media only screen and(max-width: 800px) {
+    padding: 3rem;
+  }
+  @media only screen and(max-width: 450px) {
+    padding: 0.5rem;
+  }
 }
 
 .input {
-  width: 50%;
+  width: auto;
 
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
@@ -535,6 +569,10 @@
     background-color: white;
 
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+
+    @media only screen and(max-width: 450px) {
+      width: 30%;
+    }
 
     &:hover {
       transform: scale(1.05);
