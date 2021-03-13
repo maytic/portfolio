@@ -98,11 +98,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
   }
   // header name
   &__name {
     font-weight: 300;
     margin-top: 1rem;
+    box-sizing: border-box;
   }
 
   // button
@@ -141,6 +143,44 @@
   @media only screen and(max-width: 1470px) {
     font-size: 2.1rem;
   }
+  @media only screen and(max-width: 1395px) {
+    font-size: 2rem;
+  }
+  @media only screen and(max-width: 1340px) {
+    font-size: 1.9rem;
+  }
+  @media only screen and(max-width: 1285px) {
+    font-size: 1.8rem;
+  }
+  @media only screen and(max-width: 1230px) {
+    font-size: 1.7rem;
+  }
+  @media only screen and(max-width: 1175px) {
+    font-size: 1.6rem;
+  }
+  @media only screen and(max-width: 1120px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and(max-width: 1065px) {
+    font-size: 1.4rem;
+  }
+  @media only screen and(max-width: 1010px) {
+    font-size: 1.3rem;
+  }
+  @media only screen and(max-width: 955px) {
+    font-size: 1.2rem;
+  }
+  @media only screen and(max-width: 900px) {
+    font-size: 1.1rem;
+  }
+  @media only screen and(max-width: 845px) {
+    font-size: 1rem;
+  }
+  @media only screen and(max-width: 790px) {
+    font-size: 0.9rem;
+  }
+  @media only screen and(max-width: 735px) {
+  }
 }
 
 ////////////////////////
@@ -154,6 +194,10 @@
 
   flex-direction: column;
 
+  // media queries
+  @media only screen and(max-width: 790px) {
+    padding: 0;
+  }
   // row
   &__row {
     display: flex;
@@ -304,9 +348,15 @@
 
 .projects {
   padding: 5rem;
+  @media only screen and(max-width: 790px) {
+    padding: 0;
+  }
   &__row {
     display: flex;
     justify-content: center;
+    @media only screen and(max-width: 1290px) {
+      flex-direction: column;
+    }
   }
 
   &__row:hover > &__project:not(:hover) {

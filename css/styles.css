@@ -99,10 +99,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 100%; }
   .header__name {
     font-weight: 300;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    box-sizing: border-box; }
   .header__button {
     outline: none;
     font-size: 1.8rem;
@@ -130,12 +132,51 @@ body {
   @media only screen and (max-width: 1470px) {
     .header {
       font-size: 2.1rem; } }
+  @media only screen and (max-width: 1395px) {
+    .header {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 1340px) {
+    .header {
+      font-size: 1.9rem; } }
+  @media only screen and (max-width: 1285px) {
+    .header {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 1230px) {
+    .header {
+      font-size: 1.7rem; } }
+  @media only screen and (max-width: 1175px) {
+    .header {
+      font-size: 1.6rem; } }
+  @media only screen and (max-width: 1120px) {
+    .header {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 1065px) {
+    .header {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 1010px) {
+    .header {
+      font-size: 1.3rem; } }
+  @media only screen and (max-width: 955px) {
+    .header {
+      font-size: 1.2rem; } }
+  @media only screen and (max-width: 900px) {
+    .header {
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 845px) {
+    .header {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 790px) {
+    .header {
+      font-size: 0.9rem; } }
 
 .skills {
   display: flex;
   padding: 5rem;
   margin: auto;
   flex-direction: column; }
+  @media only screen and (max-width: 790px) {
+    .skills {
+      padding: 0; } }
   .skills__row {
     display: flex;
     justify-content: center;
@@ -240,9 +281,15 @@ body {
 
 .projects {
   padding: 5rem; }
+  @media only screen and (max-width: 790px) {
+    .projects {
+      padding: 0; } }
   .projects__row {
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 1290px) {
+      .projects__row {
+        flex-direction: column; } }
   .projects__row:hover > .projects__project:not(:hover) {
     filter: brightness(0.9);
     transform: scale(0.98); }
