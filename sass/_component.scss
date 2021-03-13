@@ -441,10 +441,6 @@
       width: 100%;
     }
 
-    @media only screen and(max-width: 450px) {
-      margin: 0;
-    }
-
     transition: all 0.3s;
     &:first-child {
       margin-left: 5rem;
