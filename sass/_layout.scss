@@ -41,8 +41,38 @@ body {
   font-weight: 200;
   letter-spacing: 1rem;
   margin: 7rem auto;
-  width: 40%;
+  width: 50%;
 
   border-bottom: 2px solid white;
-  text-transform: to uppercase;
+  text-transform: uppercase;
+
+  @media only screen and(max-width: 1490px) {
+    font-size: 2.5rem;
+  }
+  @media only screen and(max-width: 1360px) {
+    font-size: 2.2rem;
+  }
+  @media only screen and(max-width: 1285px) {
+    font-size: 1.9rem;
+  }
+  @media only screen and(max-width: 1250px) {
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+  }
+  @media only screen and(max-width: 1185px) {
+    font-size: 1.7rem;
+  }
+  @media only screen and(max-width: 1185px) {
+    letter-spacing: 0.3rem;
+  }
+  @media only screen and(max-width: 880px) {
+    font-size: 1.6rem;
+  }
+  @media only screen and(max-width: 880px) {
+    letter-spacing: 0.2rem;
+  }
+
+  @media only screen and(max-width: 815px) {
+    font-size: 1.4rem;
+  }
 }
