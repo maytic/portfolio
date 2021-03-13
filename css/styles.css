@@ -83,7 +83,7 @@ body {
     @media only screen and (max-width: 580px) {
       .navigation__logo {
         font-size: 1.6rem; } }
-    @media only screen and (max-width: 530px) {
+    @media only screen and (max-width: 555px) {
       .navigation__logo {
         font-size: 1.4rem; } }
   .navigation__list {
@@ -109,17 +109,17 @@ body {
       position: relative;
       display: flex;
       vertical-align: center; }
-      @media only screen and (max-width: 1460px) {
-        .navigation__list-link {
-          font-size: 1.8rem; } }
-      @media only screen and (max-width: 580px) {
-        .navigation__list-link {
-          font-size: 1.6rem; } }
-      @media only screen and (max-width: 530px) {
-        .navigation__list-link {
-          font-size: 1.4rem; } }
       .navigation__list-link:link, .navigation__list-link:visited {
         color: var(--color-grey-1); }
+        @media screen and (max-width: 1460px) {
+          .navigation__list-link:link, .navigation__list-link:visited {
+            font-size: 1.8rem; } }
+        @media screen and (max-width: 580px) {
+          .navigation__list-link:link, .navigation__list-link:visited {
+            font-size: 1.6rem; } }
+        @media screen and (max-width: 555px) {
+          .navigation__list-link:link, .navigation__list-link:visited {
+            font-size: 1.4rem; } }
       .navigation__list-link:hover {
         outline: none;
         color: var(--color-primary-2);
