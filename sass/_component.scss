@@ -110,9 +110,9 @@
   // button
   &__button {
     outline: none;
-    font-size: 1.8rem;
+    font-size: 80%;
     padding: 1.5rem 3rem;
-    width: 50%;
+    width: 30%;
     background-color: transparent;
     border: none;
     border-bottom: white 1px solid;
@@ -129,7 +129,7 @@
     &:hover,
     &:focus {
       background-color: white;
-      width: 100%;
+      width: 40%;
       color: black;
       border-radius: 100px;
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
@@ -170,17 +170,6 @@
   @media only screen and(max-width: 955px) {
     font-size: 1.2rem;
   }
-  @media only screen and(max-width: 900px) {
-    font-size: 1.1rem;
-  }
-  @media only screen and(max-width: 845px) {
-    font-size: 1rem;
-  }
-  @media only screen and(max-width: 790px) {
-    font-size: 0.9rem;
-  }
-  @media only screen and(max-width: 735px) {
-  }
 }
 
 ////////////////////////
@@ -195,7 +184,7 @@
   flex-direction: column;
 
   // media queries
-  @media only screen and(max-width: 790px) {
+  @media only screen and(max-width: 1470px) {
     padding: 0;
   }
   // row
@@ -348,7 +337,7 @@
 
 .projects {
   padding: 5rem;
-  @media only screen and(max-width: 790px) {
+  @media only screen and(max-width: 1470px) {
     padding: 0;
   }
   &__row {
@@ -423,6 +412,9 @@
 ///////////////////////
 .contact-me {
   padding: 10rem;
+  @media only screen and(max-width: 1470px) {
+    padding: 0;
+  }
 }
 
 .input {
