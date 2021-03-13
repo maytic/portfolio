@@ -17,19 +17,23 @@
   margin-top: 0.5rem;
   border-bottom: 1;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
 
   // logo
   &__logo {
     margin-left: 2rem;
 
     @media only screen and(max-width: 1460px) {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
     }
     @media only screen and(max-width: 580px) {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
     @media only screen and(max-width: 555px) {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+    }
+    @media screen and(max-width: 475px) {
+      font-size: 1.1rem;
     }
   }
 
@@ -45,6 +49,10 @@
       transform: scale(1);
       transition: all 0.2s;
       backface-visibility: hidden;
+
+      @media screen and(max-width: 750px) {
+        margin-right: 0;
+      }
 
       &:hover {
         transform: scale(1.05);
@@ -71,13 +79,17 @@
       &:visited {
         color: var(--color-grey-1);
         @media screen and(max-width: 1460px) {
-          font-size: 1.8rem;
+          font-size: 1.7rem;
         }
         @media screen and(max-width: 580px) {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
         @media screen and(max-width: 555px) {
-          font-size: 1.4rem;
+          padding: 0.6rem 0.9rem;
+          font-size: 1.3rem;
+        }
+        @media screen and(max-width: 475px) {
+          font-size: 1.1rem;
         }
       }
 
