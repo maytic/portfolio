@@ -53,6 +53,7 @@ body {
       letter-spacing: 0.3rem; } }
   @media only screen and (max-width: 880px) {
     .title {
+      font-weight: 400;
       font-size: 1.6rem; } }
   @media only screen and (max-width: 880px) {
     .title {
@@ -60,6 +61,9 @@ body {
   @media only screen and (max-width: 815px) {
     .title {
       font-size: 1.4rem; } }
+  @media only screen and (max-width: 815px) {
+    .title {
+      font-size: 1.2rem; } }
 
 .navigation {
   color: var(--color-grey-1);
@@ -439,6 +443,9 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   transition: all 0.2s; }
+  @media only screen and (max-width: 750px) {
+    .input {
+      padding: 1.5rem; } }
   .input:hover {
     transform: scale(1.02); }
   .input__form {
