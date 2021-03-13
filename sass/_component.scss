@@ -395,13 +395,13 @@
 ///////////////////////
 
 .projects {
-  padding: 5rem;
+  padding: 0 5rem;
 
   @media only screen and(max-width: 550px) {
     padding: 3rem;
   }
   @media only screen and(max-width: 450px) {
-    padding: 0.5rem;
+    padding: 1.5rem;
   }
 
   &__row {
@@ -426,7 +426,7 @@
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
     // queries
     @media only screen and(max-width: 1200px) {
@@ -435,10 +435,11 @@
       width: 50%;
     }
 
-    @media only screen and(max-width: 800px) {
+    @media only screen and(max-width: 750px) {
       margin: 0 auto;
       margin-bottom: 5rem;
       width: 100%;
+      height: 27rem;
     }
 
     transition: all 0.3s;
@@ -471,11 +472,16 @@
   }
 
   &__details {
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     font-size: 1rem;
     color: var(--color-grey-2);
     text-align: start;
     font-weight: 300;
+
+    @media only screen and(max-width: 750px) {
+      font-size: 0.9rem;
+      padding: 1.25rem 1.25rem 0rem 1.25rem;
+    }
 
     &-item {
       list-style: none;
@@ -498,7 +504,7 @@
     padding: 3rem;
   }
   @media only screen and(max-width: 450px) {
-    padding: 0.5rem;
+    padding: 1.5rem;
   }
 }
 
@@ -509,7 +515,7 @@
   margin: 0 auto;
   padding: 2rem;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.2s;
 
   &:hover {
@@ -532,6 +538,7 @@
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
     z-index: 3;
     transition: all 0.2s;
+    letter-spacing: 1px;
   }
 
   &__email:focus,
@@ -556,13 +563,14 @@
 
   &__button {
     padding: 0.5rem 0.7rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     width: 20%;
     margin-left: auto;
     border-radius: 100px;
     border: none;
     background-color: white;
+    letter-spacing: 1px;
 
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
 
