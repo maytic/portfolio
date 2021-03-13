@@ -49,6 +49,15 @@ body {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2); }
   .navigation__logo {
     margin-left: 2rem; }
+    @media only screen and (max-width: 1460px) {
+      .navigation__logo {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 580px) {
+      .navigation__logo {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 530px) {
+      .navigation__logo {
+        font-size: 1.4rem; } }
   .navigation__list {
     display: flex;
     list-style: none; }
@@ -69,7 +78,18 @@ body {
       padding: 0.2rem 0.5rem;
       transition: all 0.1s;
       border-radius: 5px;
-      position: relative; }
+      position: relative;
+      display: flex;
+      vertical-align: center; }
+      @media only screen and (max-width: 1460px) {
+        .navigation__list-link {
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 580px) {
+        .navigation__list-link {
+          font-size: 1.6rem; } }
+      @media only screen and (max-width: 530px) {
+        .navigation__list-link {
+          font-size: 1.4rem; } }
       .navigation__list-link:link, .navigation__list-link:visited {
         color: var(--color-grey-1); }
       .navigation__list-link:hover {
@@ -78,6 +98,9 @@ body {
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
       .navigation__list-link:active {
         color: var(--color-primary); }
+      .navigation__list-link:focus {
+        outline: none;
+        animation: pulsate 1s infinite; }
       @media only screen and (min-height: 950px) {
         .navigation__list-link {
           font-size: 2rem;
@@ -108,8 +131,7 @@ body {
   .header__button {
     outline: none;
     font-size: 80%;
-    padding: 1.5rem 3rem;
-    width: 30%;
+    padding: 1.2rem 3rem;
     background-color: transparent;
     border: none;
     border-bottom: white 1px solid;
@@ -120,13 +142,31 @@ body {
     border-radius: none;
     box-shadow: none;
     text-transform: uppercase;
-    transition: width 0.3s, box-shadow 0.3s, background-color 0.3s 0.3s, color 0.3s 0.3s, border-radius 0.3s 0.3s, transform 0.1s; }
+    transition: padding 0.3s, box-shadow 0.3s, background-color 0.3s 0.3s, color 0.3s 0.3s, border-radius 0.3s 0.3s, transform 0.1s; }
+    @media only screen and (max-width: 1460px) {
+      .header__button {
+        padding: 1.4rem 2.9rem; } }
+    @media only screen and (max-width: 1160px) {
+      .header__button {
+        padding: 1rem 2.5rem; } }
+    @media only screen and (max-width: 960px) {
+      .header__button {
+        padding: 0.5rem 2rem; } }
     .header__button:hover, .header__button:focus {
       background-color: white;
-      width: 40%;
+      padding: 1.2rem 6rem;
       color: black;
       border-radius: 100px;
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
+      @media only screen and (max-width: 1460px) {
+        .header__button:hover, .header__button:focus {
+          padding: 1.2rem 6rem; } }
+      @media only screen and (max-width: 1160px) {
+        .header__button:hover, .header__button:focus {
+          padding: 1rem 5rem; } }
+      @media only screen and (max-width: 960px) {
+        .header__button:hover, .header__button:focus {
+          padding: 0.5rem 4rem; } }
     .header__button:active {
       transform: translateY(3px); }
   @media only screen and (max-width: 1470px) {
@@ -324,9 +364,6 @@ body {
 
 .contact-me {
   padding: 10rem; }
-  @media only screen and (max-width: 1470px) {
-    .contact-me {
-      padding: 0; } }
 
 .input {
   width: 100%;

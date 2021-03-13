@@ -11,6 +11,7 @@
   justify-content: space-between;
   font-size: 1.8rem;
   align-items: center;
+
   z-index: 1000; // always apear on top
 
   margin-top: 0.5rem;
@@ -20,6 +21,16 @@
   // logo
   &__logo {
     margin-left: 2rem;
+
+    @media only screen and(max-width: 1460px) {
+      font-size: 1.8rem;
+    }
+    @media only screen and(max-width: 580px) {
+      font-size: 1.6rem;
+    }
+    @media only screen and(max-width: 530px) {
+      font-size: 1.4rem;
+    }
   }
 
   // ul list
@@ -53,6 +64,18 @@
       transition: all 0.1s;
       border-radius: 5px;
       position: relative;
+      display: flex;
+      vertical-align: center;
+
+      @media only screen and(max-width: 1460px) {
+        font-size: 1.8rem;
+      }
+      @media only screen and(max-width: 580px) {
+        font-size: 1.6rem;
+      }
+      @media only screen and(max-width: 530px) {
+        font-size: 1.4rem;
+      }
 
       &:link,
       &:visited {
@@ -66,6 +89,11 @@
       }
       &:active {
         color: var(--color-primary);
+      }
+
+      &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
       }
       @media only screen and(min-height: 950px) {
         font-size: 2rem;
@@ -111,8 +139,8 @@
   &__button {
     outline: none;
     font-size: 80%;
-    padding: 1.5rem 3rem;
-    width: 30%;
+    padding: 1.2rem 3rem;
+
     background-color: transparent;
     border: none;
     border-bottom: white 1px solid;
@@ -124,15 +152,35 @@
     box-shadow: none;
     text-transform: uppercase;
 
-    transition: width 0.3s, box-shadow 0.3s, background-color 0.3s 0.3s,
+    // media queries
+    @media only screen and(max-width: 1460px) {
+      padding: 1.4rem 2.9rem;
+    }
+    @media only screen and(max-width: 1160px) {
+      padding: 1rem 2.5rem;
+    }
+    @media only screen and(max-width: 960px) {
+      padding: 0.5rem 2rem;
+    }
+
+    transition: padding 0.3s, box-shadow 0.3s, background-color 0.3s 0.3s,
       color 0.3s 0.3s, border-radius 0.3s 0.3s, transform 0.1s;
     &:hover,
     &:focus {
       background-color: white;
-      width: 40%;
+      padding: 1.2rem 6rem;
       color: black;
       border-radius: 100px;
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+      @media only screen and(max-width: 1460px) {
+        padding: 1.2rem 6rem;
+      }
+      @media only screen and(max-width: 1160px) {
+        padding: 1rem 5rem;
+      }
+      @media only screen and(max-width: 960px) {
+        padding: 0.5rem 4rem;
+      }
     }
 
     &:active {
@@ -412,9 +460,6 @@
 ///////////////////////
 .contact-me {
   padding: 10rem;
-  @media only screen and(max-width: 1470px) {
-    padding: 0;
-  }
 }
 
 .input {
