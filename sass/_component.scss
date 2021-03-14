@@ -238,43 +238,48 @@
 // SKILLS
 ///////////////////////
 .skills {
-  display: flex;
-
   padding: 5rem;
   margin: auto;
 
-  flex-direction: column;
-
   // media queries
-  @media only screen and(max-width: 1470px) {
-    padding: 0;
-  }
-  // row
-  &__row {
+
+  &__parent-container {
     display: flex;
     justify-content: center;
-
-    height: 10rem;
-
-    margin: auto;
-
-    &:not(:last-child) {
-      margin-bottom: 3rem;
-    }
-
-    @media only screen and(max-width: 1470px) {
+    @media only screen and(max-width: 900px) {
       flex-direction: column;
-      margin: 5rem 5rem;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+
+    @media only screen and(max-width: 900px) {
+      width: 100%;
+    }
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+    & > * {
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
     }
   }
 
   // card inside row
-  &__card {
-    width: 30%;
 
-    &:not(:last-child) {
-      margin-right: 5rem;
-    }
+  &__row {
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5rem;
   }
 
   &__image {
@@ -286,24 +291,27 @@
     width: 6rem;
     height: 6rem;
     transition: all 0.2s;
+    margin-left: auto;
+    margin-right: auto;
 
     &:hover {
       transform: scale(1.05) translateY(-5px) rotate(7deg);
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
     }
   }
+
   &__text {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 200;
+    width: auto;
   }
   &__logo {
     height: 6rem;
     width: 6rem;
     padding: 1rem;
-    display: flex;
-
     position: relative;
+
     &-1 {
       left: -1rem;
       top: -1.5rem;
