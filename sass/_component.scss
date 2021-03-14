@@ -540,12 +540,16 @@
     font-family: inherit;
     border-radius: 5px;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: white;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
     z-index: 3;
     transition: all 0.2s;
     letter-spacing: 1px;
+
+    @media only screen and(max-width: 500px) {
+      font-size: 0.9rem;
+    }
   }
 
   &__email:focus,
@@ -581,6 +585,9 @@
 
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
 
+    @media only screen and(max-width: 500px) {
+      font-size: 0.9rem;
+    }
     @media only screen and(max-width: 450px) {
       width: 30%;
     }

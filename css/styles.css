@@ -458,12 +458,15 @@ body {
     font-family: inherit;
     border-radius: 5px;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: white;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
     z-index: 3;
     transition: all 0.2s;
     letter-spacing: 1px; }
+    @media only screen and (max-width: 500px) {
+      .input__email, .input__message {
+        font-size: 0.9rem; } }
   .input__email:focus, .input__message:focus {
     border-bottom: 2px solid #00d100;
     outline: none;
@@ -489,6 +492,9 @@ body {
     background-color: white;
     letter-spacing: 1px;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 500px) {
+      .input__button {
+        font-size: 0.9rem; } }
     @media only screen and (max-width: 450px) {
       .input__button {
         width: 30%; } }
