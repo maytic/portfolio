@@ -249,7 +249,9 @@ body {
   margin: auto; }
   .skills__parent-container {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto; }
     @media only screen and (max-width: 900px) {
       .skills__parent-container {
         flex-direction: column; } }
@@ -264,7 +266,7 @@ body {
     .skills__container:not(:last-child) {
       margin-right: 5rem; }
     .skills__container > *:not(:last-child) {
-      margin-right: 5rem; }
+      margin-right: 4rem; }
   .skills__card {
     display: flex;
     flex-direction: column;
@@ -282,6 +284,10 @@ body {
     transition: all 0.2s;
     margin-left: auto;
     margin-right: auto; }
+    @media only screen and (max-width: 750px) {
+      .skills__image {
+        height: 5rem;
+        width: 5rem; } }
     .skills__image:hover {
       transform: scale(1.05) translateY(-5px) rotate(7deg);
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
@@ -290,75 +296,137 @@ body {
     font-size: 1.2rem;
     font-weight: 200;
     width: auto; }
+    @media only screen and (max-width: 815px) {
+      .skills__text {
+        font-size: 1rem; } }
   .skills__logo {
     height: 6rem;
     width: 6rem;
     padding: 1rem;
     position: relative; }
-    .skills__logo-1 {
+    .skills__logo-java {
       left: -1rem;
       top: -1.5rem;
       position: absolute;
       transform: scale(0.95); }
-    .skills__logo-2 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-java {
+          transform: scale(0.65);
+          left: -1.4rem; } }
+    .skills__logo-cpp {
       transform: scale(1.2);
       top: -1rem;
       left: -0.6rem;
       position: absolute; }
-    .skills__logo-3 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-cpp {
+          transform: scale(1);
+          left: -1.2rem;
+          top: -1.5rem; } }
+    .skills__logo-csharp {
       top: -1rem;
       left: -1rem;
       position: absolute;
       transform: scale(1.2); }
-    .skills__logo-4 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-csharp {
+          transform: scale(1);
+          left: -1.5rem;
+          top: -1.5rem; } }
+    .skills__logo-javascript {
       top: -2.5rem;
       left: -1.75rem;
       position: absolute;
       transform: scale(1.2);
       background-color: #f7df1e; }
-    .skills__logo-5 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-javascript {
+          transform: scale(1);
+          left: -2rem;
+          top: -2.5rem; } }
+    .skills__logo-html {
       top: -0.8rem;
       left: -1rem;
       position: absolute;
       background-color: #e34e26; }
-    .skills__logo-6 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-html {
+          transform: scale(0.9);
+          left: -1.5rem;
+          top: -1.5rem; } }
+    .skills__logo-css {
       top: -1.5rem;
       left: -1rem;
       position: absolute;
       transform: scale(1.3);
       background-color: #2062af; }
-    .skills__logo-7 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-css {
+          transform: scale(1.1);
+          left: -1.5rem;
+          top: -2rem; } }
+    .skills__logo-json {
       top: -1rem;
       left: -1rem;
       position: absolute;
       transform: scale(0.9); }
-    .skills__logo-8 {
-      top: -0.7rem;
+      @media only screen and (max-width: 750px) {
+        .skills__logo-json {
+          transform: scale(0.8);
+          left: -1.5rem;
+          top: -1.5rem; } }
+    .skills__logo-spring {
+      top: -0.95rem;
       left: -1rem;
       position: absolute;
-      transform: scale(0.9); }
-    .skills__logo-9 {
+      transform: scale(0.8); }
+      @media only screen and (max-width: 750px) {
+        .skills__logo-spring {
+          transform: scale(0.75);
+          left: -1.5rem;
+          top: -1.5rem; } }
+    .skills__logo-postgresql {
       top: -0.5rem;
       left: -1rem;
       position: absolute;
       transform: scale(0.8); }
-    .skills__logo-10 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-postgresql {
+          transform: scale(0.7);
+          left: -1.5rem;
+          top: -1.2rem; } }
+    .skills__logo-android {
       top: -2.5rem;
       left: -1rem;
       position: absolute;
       transform: scale(1.4); }
-    .skills__logo-11 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-android {
+          transform: scale(1);
+          left: -1.5rem;
+          top: -2.5rem; } }
+    .skills__logo-hibernate {
       top: -1rem;
       left: -1rem;
       position: absolute;
       transform: scale(0.95); }
-    .skills__logo-12 {
+      @media only screen and (max-width: 750px) {
+        .skills__logo-hibernate {
+          transform: scale(0.75);
+          left: -1.5rem;
+          top: -1.5rem; } }
+    .skills__logo-xml {
       color: var(--color-grey-1);
       font-size: 2.5rem;
       font-weight: 500;
       top: 0.2rem;
-      left: -0.5rem;
+      left: -1rem;
       position: absolute; }
+      @media only screen and (max-width: 750px) {
+        .skills__logo-xml {
+          transform: scale(0.7);
+          left: -1.5rem;
+          top: -0.7rem; } }
 
 .projects {
   padding: 0 5rem; }
@@ -397,7 +465,7 @@ body {
       .projects__project {
         margin: 0 auto;
         margin-bottom: 5rem;
-        width: 85%;
+        width: 75%;
         height: 27rem; } }
     .projects__project:first-child {
       margin-left: 5rem; }
@@ -443,13 +511,16 @@ body {
       padding: 1.5rem; } }
 
 .input {
-  width: auto;
+  width: 35rem;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   padding: 2rem;
   border-radius: 5px;
   font-size: 1rem;
   transition: all 0.2s; }
+  @media only screen and (max-width: 950px) {
+    .input {
+      width: auto; } }
   @media only screen and (max-width: 750px) {
     .input {
       padding: 1.5rem; } }
