@@ -4,6 +4,8 @@ const form = document.querySelector("#form");
 const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const load = document.querySelector(".load");
+const contact = document.querySelector("#nav-cont");
+const headerBtn = document.querySelector(".header__button");
 
 // scroll events
 let start = 0;
@@ -60,7 +62,23 @@ const submit = function (e) {
     method: "POST",
     body: JSON.stringify(emailObj),
     headers: headers,
-  }).then((response) => response.json());
+  }).then((response) => {
+    load.style.display = "none";
+    email.value = "";
+    message.value = "Email sent!";
+  });
 };
 
 form.addEventListener("submit", submit);
+
+// scroll events
+contact.addEventListener("click", (e) => {
+  e.preventDefault();
+  const offSetTop = document.querySelector("#contact").offsetTop;
+
+  scroll({ top: offSetTop, behavior: "smooth" });
+});
+
+headerBtn.onclick = () => {
+  scroll({ top: "50%", behavior: "smooth" });
+};
