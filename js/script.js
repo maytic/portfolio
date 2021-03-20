@@ -6,6 +6,7 @@ const message = document.querySelector("#message");
 const load = document.querySelector(".load");
 const contact = document.querySelector("#nav-cont");
 const headerBtn = document.querySelector(".header__button");
+const projects = document.querySelector(".projects");
 
 // scroll events
 let start = 0;
@@ -49,6 +50,7 @@ const submit = function (e) {
     name: "portfolio website",
     text: message.value,
   };
+
   // headers
   const headers = new Headers();
   headers.set("Authorization", "Basic " + btoa("testUser" + ":" + "test123"));
@@ -79,6 +81,7 @@ contact.addEventListener("click", (e) => {
   scroll({ top: offSetTop, behavior: "smooth" });
 });
 
-headerBtn.onclick = () => {
-  scroll({ top: "50%", behavior: "smooth" });
+headerBtn.onclick = (e) => {
+  console.log(e);
+  projects.scrollIntoView({ behavior: "smooth" });
 };
