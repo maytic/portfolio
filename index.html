@@ -18,7 +18,12 @@
       <div class="navigation__links">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a class="navigation__list-link" href="#">github</a>
+            <a
+              class="navigation__list-link"
+              href="https://github.com/maytic"
+              target="_blank"
+              >github</a
+            >
           </li>
           <li class="navigation__list-item">
             <a class="navigation__list-link" href="#">contact me</a>
@@ -31,7 +36,7 @@
       <div class="header__container">
         <h1 class="header__name">Mauricio Torres</h1>
         <p class="header__paragraph">Software Developer.</p>
-        <button class="header__button">Skills</button>
+        <button class="header__button">Projects</button>
       </div>
     </header>
 
@@ -199,19 +204,27 @@
       <h2 class="title">Projects</h2>
 
       <div class="projects__row">
-        <div class="projects__project">
+        <a
+          class="projects__project"
+          href="https://github.com/maytic/portfolio"
+          target="_blank"
+        >
           <div class="projects__img projects__img-1"></div>
           <div class="projects__details">
-            <h3 class="projects__title">Portfolio Website</h3>
+            <h3 class="projects__title">Portfolio website</h3>
             <ul class="projects_details">
               <li class="projects__details-item">HTML5</li>
               <li class="projects__details-item">CSS3</li>
               <li class="projects__details-item">JS</li>
             </ul>
           </div>
-        </div>
+        </a>
 
-        <div class="projects__project">
+        <a
+          class="projects__project"
+          href="https://github.com/maytic/pokedex"
+          target="_blank"
+        >
           <div class="projects__img projects__img-2"></div>
           <div class="projects__details">
             <h3 class="projects__title">Pokemon App</h3>
@@ -221,11 +234,17 @@
               <li class="projects__details-item">Pokemon API</li>
             </ul>
           </div>
-        </div>
+        </a>
 
         <div class="projects__project">
           <div class="projects__details">
-            <h3 class="projects__title">Portfolio API</h3>
+            <h3 class="projects__title">
+              <a
+                href="https://github.com/maytic/portfolio-app-maytic"
+                target="_blank"
+                >Portfolio API <img src="img/forward.svg" alt="link icon"
+              /></a>
+            </h3>
             <ul class="projects_details">
               <li class="projects__details-item">Java</li>
               <li class="projects__details-item">REST</li>
@@ -237,7 +256,12 @@
           </div>
 
           <div class="projects__details">
-            <h3 class="projects__title">Pokemon API</h3>
+            <h3 class="projects__title">
+              <a href="https://github.com/maytic/pokemon-db" target="_blank"
+                >Pokemon API<img src="img/forward.svg" alt="link icon"
+              /></a>
+            </h3>
+
             <ul class="projects_details">
               <li class="projects__details-item">Java</li>
               <li class="projects__details-item">Spring</li>
@@ -253,8 +277,9 @@
     <section class="contact-me">
       <h2 class="title">Contact Me</h2>
       <div class="input">
-        <form action="#" class="input__form">
+        <form action="#" id="form" class="input__form">
           <input
+            id="email"
             class="input__email"
             type="text"
             placeholder="Your email"
@@ -262,6 +287,7 @@
           />
           <label class="input__e-label" for="email">Email</label>
           <textarea
+            id="message"
             class="input__message"
             name="message"
             id="message"
@@ -272,8 +298,11 @@
           <label class="input__m-label" for="message">Message</label>
           <button class="input__button">Send</button>
         </form>
+        <div class="load"><div class="load__loader"></div></div>
       </div>
     </section>
+
+    <div class="footer"><h3>Mauricio Torres &copy;</h3></div>
   </body>
   <script src="js/script.js"></script>
 </html>
